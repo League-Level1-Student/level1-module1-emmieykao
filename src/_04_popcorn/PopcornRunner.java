@@ -7,8 +7,10 @@ public static void main(String[] args) {
 	String flavor=JOptionPane.showInputDialog("What flavor of popcorn would you like?");
 	Popcorn popcorn=new Popcorn(flavor);
 	Microwave microwave=new Microwave();
-	popcorn.putInMicrowave(popcorn);
+	microwave.putInMicrowave(popcorn);
 	String time =JOptionPane.showInputDialog("How long should I cook it for?");
-	
+	int x=Integer.parseInt(time);
+	microwave.setTime(x);
+	microwave.startMicrowave();
 }
 }
