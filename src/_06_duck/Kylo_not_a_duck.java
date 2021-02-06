@@ -6,6 +6,8 @@ String favoriteToy;
 Kylo_not_a_duck(String favoriteToy, int numberofToys) {
        this.favoriteToy = favoriteToy;
        this.numberofToys = numberofToys;
+       System.out.println("Hello, my name is Kylo. My favorite toy is " + favoriteToy + ".");
+       System.out.println("I have " + numberofToys + " toys.");
 }
 void bark() {
 	System.out.println("woofwoofwoofwoofyipyipyipBARKBARKHOWLLLLLLL");
